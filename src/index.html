@@ -13,18 +13,18 @@
       <p>Find drink recipes by ingredient!</p>
     </div>
     <div class="container">
-      <form class="form">
-        <label for ="ingedient-type">Select Your Ingredient</label>
-        <select class="form-control" id="ingedient-type" type="select">
+      <form id="ingredients-form">
+        <label for ="ingredient-type">Select Your Ingredient</label>
+        <select class="form-control" id="ingredient-type" type="select">
           <option value="Select" disabled>Select</option>
           <option value="Applejack">Applejack</option>
           <option value="Gin">Gin</option>
           <option value="Scotch">Scotch</option>
-          <option value="Triple">Triple Sec</option>
-          <option value="Southern">Southern Comfort</option>
-          <option value="Orange">Orange Bitters</option>
+          <option value="Triple_Sec">Triple Sec</option>
+          <option value="Southern_Comfort">Southern Comfort</option>
+          <option value="Orange_Bitters">Orange Bitters</option>
           <option value="Brandy">Brandy</option>
-          <option value="Dry">Dry Vermouth</option>
+          <option value="Dry_Vermouth">Dry Vermouth</option>
           <option value="Amaretto">Amaretto</option>
           <option value="Champagne">Champagne</option>
           <option value="Coffee">Coffee</option>
@@ -67,43 +67,53 @@
           <option value="Midori">Midori</option>
           <option value="Cider">Cider</option>
           <option value="Sprite">Sprite</option>
-          <option value="Coffee liqueur">Coffee liqueur</option>
-          <option value="demerara Sugar">demerara Sugar</option>
-          <option value="Dubonnet Rouge">Dubonnet Rouge</option>
-          <option value="Lime juice">Lime juice</option>
-          <option value="Irish whiskey">Irish whiskey</option>
-          <option value="Apple brandy">Apple brandy</option>
-          <option value="Carbonated water">Carbonated water</option>
-          <option value="Cherry brandy">Cherry brandy</option>
-          <option value="Creme de">Creme de</option>
-          <option value="Coffee brandy">Coffee brandy</option>
-          <option value="Red wine">Red wine</option>
-          <option value="Grapefruit juice">Grapefruit juice</option>
-          <option value="Sloe gin">Sloe gin</option>
-          <option value="Apple juice">Apple juice</option>
-          <option value="Pineapple juice">Pineapple juice</option>
-          <option value="Lemon juice">Lemon juice</option>
-          <option value="Sugar syrup">Sugar syrup</option>
-          <option value="Chocolate syrup">Chocolate syrup</option>
-          <option value="Tomato juice">Tomato juice</option>
-          <option value="Cocoa powder">Cocoa powder</option>
+          <option value="Coffee_liqueur">Coffee liqueur</option>
+          <option value="demerara_Sugar">demerara Sugar</option>
+          <option value="Dubonnet_Rouge">Dubonnet Rouge</option>
+          <option value="Lime_juice">Lime juice</option>
+          <option value="Irish_whiskey">Irish whiskey</option>
+          <option value="Apple_brandy">Apple brandy</option>
+          <option value="Carbonated_water">Carbonated water</option>
+          <option value="Cherry_brandy">Cherry brandy</option>
+          <option value="Creme_de">Creme de</option>
+          <option value="Coffee_brandy">Coffee brandy</option>
+          <option value="Red_wine">Red wine</option>
+          <option value="Grapefruit_juice">Grapefruit juice</option>
+          <option value="Sloe_gin">Sloe gin</option>
+          <option value="Apple_juice">Apple juice</option>
+          <option value="Pineapple_juice">Pineapple juice</option>
+          <option value="Lemon_juice">Lemon juice</option>
+          <option value="Sugar_syrup">Sugar syrup</option>
+          <option value="Chocolate_syrup">Chocolate syrup</option>
+          <option value="Tomato_juice">Tomato juice</option>
+          <option value="Cocoa_powder">Cocoa powder</option>
           <option value="Chocolate">Chocolate</option>
-          <option value="Heavy cream">Heavy cream</option>
-          <option value="Peach Vodka">Peach Vodka</option>
-          <option value="Spiced rum">Spiced rum</option>
-          <option value="Angelica root">Angelica root</option>
-          <option value="Johnnie Walker">Johnnie Walker</option>
-          <option value="Apple cider">Apple cider</option>
-          <option value="Cranberry juice">Cranberry juice</option>
-          <option value="Grape juice">Grape juice</option>
-          <option value="Peach nectar">Peach nectar</option>
-          <option value="Absolut Citron">Absolut Citron</option>
-          <option value="Irish cream">Irish cream</option>
-          <option value="Chocolate liqueur">Chocolate liqueur</option>
-          <option value="Midori melon">Midori melon</option>
-          <option value="Blackberry brandy">Blackberry brandy</option>
+          <option value="Heavy_cream">Heavy cream</option>
+          <option value="Peach_Vodka">Peach Vodka</option>
+          <option value="Spiced_rum">Spiced rum</option>
+          <option value="Angelica_root">Angelica root</option>
+          <option value="Johnnie_Walker">Johnnie Walker</option>
+          <option value="Apple_cider">Apple cider</option>
+          <option value="Cranberry_juice">Cranberry juice</option>
+          <option value="Grape_juice">Grape juice</option>
+          <option value="Peach_nectar">Peach nectar</option>
+          <option value="Absolut_Citron">Absolut Citron</option>
+          <option value="Irish_cream">Irish cream</option>
+          <option value="Chocolate_liqueur">Chocolate liqueur</option>
+          <option value="Midori_melon">Midori melon</option>
+          <option value="Blackberry_brandy">Blackberry brandy</option>
         </select>
       </form>
+
+      <section>
+        <form id="drink-list">
+          <label for="drinks">List of Drinks based off Ingredients:</label>
+          <select name="" id="drinks">
+            <option value=""></option>
+          </select>
+        </form>
+        <p id="output"></p>
+      </section>
     </div>
   </div>
 </body>
